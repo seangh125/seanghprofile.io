@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sean Huynh Portfolio</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
 
+
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="#" id="contact-link"> Contact Me </a></li>
+    </ul>
+    <div class="topnav">
+        <input type="text" placeholder="Search">
+    </div>
+</nav>
+
+
+<section class="hero">
+    <h1>Sean Huynh Portfolio</h1>
+    <h2> Bachelor of Engineering (Honours) </h2>
+    <h2> University of Technology Sydney</h2>
+    <h3> WAM: 86.29 | GPA: 6.61/7 </h3>
+    <div class="profile-photo">
+        <img src="../images/DSCF1327.JPG" alt="Profile Photo of Me">
+    </div>
+</section>
+
+
+<section class="slideshow-container">
+    <div class="slides fade">
+        <img src="../images/DSCF0570.JPG" alt="Photo 1">
+    </div>
+    <div class="slides fade">
+        <img src="../images/image%202.jpg" alt="Photo 2">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_1229.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/CFTF6855.JPG" alt="Photo 4">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_1879.JPG" alt="Photo 5">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_1971.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_1983.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_1998.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2003.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2021.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2134.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2187.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2332.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2335.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2403.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_2441.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_5009.JPG" alt="Photo 3">
+    </div>
+    <div class="slides fade">
+        <img src="../images/IMG_6954.JPG" alt="Photo 3">
+    </div>
+</section>
+
+
+<section class="summary">
+    <h2>About Me</h2>
+    <p>
+        Hi, I’m Sean — a passionate software developer with interests in full-stack web
+        development, problem-solving, and innovative technology. I’m currently seeking
+        opportunities to apply my skills and grow within a collaborative engineering team.
+    </p>
+</section>
+
+<div id="contact-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn"> &times; </span>
+        <h2> Contact Me </h2>
+        <form id="contact-form" action="https://formspree.io/f/mzzjowqa" method="POST">
+            <label for="name"> Your Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"> Your Email: </label>
+            <input type="text" id="email" name="_replyto" required>
+
+            <label for="message"> Message: </label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit"> Send Message </button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
