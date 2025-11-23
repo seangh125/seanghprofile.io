@@ -330,6 +330,12 @@ ul li a:hover {
   padding: 0;
   border-top: 3px solid #555;
   border-bottom: 3px solid #555;
+  text-align: center;
+}
+
+.hobbies-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .hobbies-hero .row {
@@ -346,22 +352,30 @@ ul li a:hover {
   background-color: #B0C4DE;
   text-align: center;
   font-size: 50px;
-  margin
+  margin: 0;
+  padding: 20px 0;
 }
 
 .hobbies-hero .column h3 {
   font-size: 2em;
-  margin-top: 0;
+  margin-top: 80px;
+}
+
+.hobbies-hero .column .Gaming-title {
+  margin-top: -20px;
 }
 
 .hobbies-hero .column {
   flex: 1;
   box-sizing: border-box;
   text-align: center;
-  padding 0 20px 40px 20px;
+  padding: 0 20px;
   border-right: 3px solid #555;
   background-color: #B0C4DE;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .hobbies-hero .column:last-child {
   border-right: none;
