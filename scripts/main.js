@@ -1,29 +1,34 @@
-let slideIndex = 0;
-showSlides();
+function startSlideshow(slideSelector, captionSelector) {
+  const slides = document.querySelectorAll(slideSelector);
+  const captionBox = document.querySelector(captionSelector);
+  if (slides.length === 0) {
+    return;
+  }
 
-function showSlides() {
-  const slides = document.getElementsByClassName("slides");
-  if (slides.length === 0) return; // <-- Prevents error when no slides exist
+  let index = 0;
 
-  let slideIndex = 0;
+  function updateCaption() {
+    const caption = slides[index].dataset.caption || "";
+    if (captionBox) captionBox.textContent = caption;
+  }
 
   function nextSlide() {
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = "block";
+    slides.forEach(s => s.style.display = "none");
+    index = (index + 1) % slides.length;
+    slides[index].style.display = "block";
+    updateCaption();
     setTimeout(nextSlide, 3000);
   }
 
-  nextSlide();
+  // Show the first slide + caption
+  slides[0].style.display = "block";
+  updateCaption();
+  setTimeout(nextSlide, 3000);
 }
 
-showSlides();
-
+startSlideshow(".photo-slide", ".photography-caption");
+startSlideshow(".game-slide", ".gaming-caption");
+startSlideshow(".lego", ".lego-caption");
 
 // Contact popup logic
 const contactLink = document.getElementById("contact-link");
@@ -33,23 +38,21 @@ const form = document.getElementById("contact-form");
 
 contactLink.addEventListener("click", (e) => {
   e.preventDefault();
-  popup.style.display = "flex"; // show popup
+  popup.style.display = "flex";
 });
 
 closeBtn.addEventListener("click", () => {
-  popup.style.display = "none"; // close when "x" clicked
+  popup.style.display = "none";
 });
 
-// Close popup if user clicks outside of the form
 window.addEventListener("click", (e) => {
   if (e.target === popup) {
     popup.style.display = "none";
   }
 });
 
-// Placeholder submit behavior
 form.addEventListener("submit", async (e) => {
-  e.preventDefault(); // prevent default form reload
+  e.preventDefault();
   const formData = new FormData(form);
 
   try {
@@ -64,7 +67,7 @@ form.addEventListener("submit", async (e) => {
       form.reset();
       popup.style.display = "none";
     } else {
-      alert("⚠Sorry, something went wrong. Please try again later.");
+      alert("Sorry, something went wrong. Please try again later.");
     }
   } catch (error) {
     alert("Network error. Please check your connection and try again.");

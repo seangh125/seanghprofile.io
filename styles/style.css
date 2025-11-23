@@ -80,6 +80,11 @@ ul li a:hover {
   text-align: center;
 }
 
+.column:not(:last-child){
+  border-right: 2px solid #ccc;
+  padding-right: 25px;
+}
+
 .column h2 {
   text-align: center;
 }
@@ -116,6 +121,14 @@ ul li a:hover {
   display: block;
   margin: 10px 0;
   line-height: 1.6;
+}
+
+.column h1 {
+  font-size: 50px;
+}
+
+.column h4 {
+  font-size: 2em;
 }
 
 
@@ -160,6 +173,15 @@ ul li a:hover {
   background-color: #000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   text-align: center;
+  margin-top: 30px;
+}
+
+.slideshow-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #000000;
+    font-style: bold;
 }
 
 .slides {
@@ -299,3 +321,42 @@ ul li a:hover {
     transform: translateY(0);
   }
 }
+
+.hobbies-hero {
+  background-color: #B0C4DE;
+  padding: 40px 0;
+}
+
+.hobbies-hero .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #B0C4DE;
+  padding: 40px 0;
+}
+
+.hobbies-hero h1 {
+  background-color: #B0C4DE;
+  font-size: 50px;
+}
+
+.hobbies-hero .column h3 {
+  font-size: 2em;
+  margin-top: -50px;
+}
+
+.hobbies-hero .column {
+  width: 33.3%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #B0C4DE;
+}
+
+@media screen and (max-width: 900px) {
+  .hobbies-hero .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
