@@ -13,8 +13,8 @@
 <nav class="navbar">
     <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#" id="contact-link"> Contact Me </a></li>
     </ul>
     <div class="topnav">
@@ -23,25 +23,87 @@
 </nav>
 
 
-<section class="hero">
-    <h1>Sean Huynh Portfolio</h1>
-    <h2> Bachelor of Engineering (Honours) </h2>
-    <h3> Majoring in Software Engineering </h3>
-    <h2> University of Technology Sydney</h2>
-    <h3> WAM: 86.29 | GPA: 6.61/7 </h3>
-    <div class="profile-photo">
-        <img src="../images/DSCF1327.JPG" alt="Profile Photo of Me">
-    </div>
-</section>
+<div class="row">
+    <div class="column">
+    <h4>Career History</h4>
+    <ul>
+        <li>
+            <b>Interim Planner/Support | Toll Group (August 25 - Present)</b>
+            <p>Managed Technical issues with Warehouse Management System and Ticket Investigation with IT, resulting in 30% greater order completion and reduction in operational delays.</p>
+            <p>Performed analysis of order reports, applying Excel and SQL to compare completed and uncompleted orders utilizing VLOOKUPs and queries to ensure customer fulfilment.</p>
+            <p>Debugged features present in current Warehouse Management System through variable isolation and process recreation and workarounds, resulting in 20% decreased delay in order completion due to system issues.</p>
+            <p>Inventory management and planning for future volumes/workloads and operational efficiency.</p>
+        </li>
+    </ul>
 
-<section class="summary">
-    <h2>About Me</h2>
-    <p>
-        Hi, I’m Sean — a passionate software developer with interests in full-stack web
-        development, problem-solving, and innovative technology. I’m currently seeking
-        opportunities to apply my skills and grow within a collaborative engineering team.
-    </p>
-</section>
+    <ul>
+        <li>
+            <b>Intern Developer | Optik Consultancy (May 25 - August 25)</b>
+            <p>Engineered backend integration API's in C# (.Net Maui, Blazor) to bridge legacy systems with prototype application, laying groundwork for future feature expansion and data synchronization.</p>
+            <p>Translated UX/UI design requirements into design systems, patterns and user interfaces leveraging Figma and Wireframe.io to create UI elements such as controls, navigational components and dashboards for different user types.</p>
+            <p>Installed and administered testing environments for backend API's, including configuration of networks, S3 servers and PostgreSQL databases; to conduct API testing with Postman and Swagger.</p>
+            <p>Leveraged Geospatial Functionality with PostGIS and kNN to enable database calculations for coordinates with developed backend API's to link closest job provider to location of job site, resulting in efficient resource usage.</p>
+        </li>
+    </ul>
+
+        <ul>
+            <li>
+                <b>Planner | Toll Group (August 23 - July 25) </b>
+                <p>Prioritized operations planning and scheduling for fulfillment and online orders, through analysis of previous trends and patterns, applying Excel, SQL and Python scripts to generate reports for planning approval.</p>
+                <p>Developed and launched contingency plans in response to technical faults and logistical delays, improving operational efficiency by 20% and ensuring continuity across multi-department operations within budget and time constraints.</p>
+                <p>Coordinated with management to establish succession planning and training programs for team leaders and staff to ensure departmental coverage and support in event of resignations or leaves across seven departments.</p>
+                <p>Liased with stakeholders and senior management to establish goal posts and review monthly targets, as well as reviews of operational failures or weak points in event of failed deadlines, as well as KPI meetings across five departments.</p>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div class="column">
+        <section id="about" class="hero">
+            <h1>Sean Huynh Portfolio</h1>
+            <h2>Bachelor of Engineering (Honours)</h2>
+            <h3>Majoring in Software Engineering</h3>
+            <h2>University of Technology Sydney</h2>
+            <h3>WAM: 86.29 | GPA: 6.61/7</h3>
+            <div class="profile-photo">
+                <img src="../images/DSCF1327.JPG" alt="Profile Photo of Me">
+            </div>
+            <h2>About Me</h2>
+            <p>
+                Hi, I’m Sean. I am a passionate software developer with interests in full-stack web
+                development, software application development and data analytics. I am also an experienced team leader and manager, having worked with multiple contracts and projects, during my time in the logistics industry. I’m currently seeking
+                opportunities to apply my skills and to further my own learning and education within the Software Development industry.
+            </p>
+        </section>
+    </div>
+
+    <div class="column">
+        <h4>Projects and Coding Work</h4>
+        <ul>
+            <li>
+                <b>Auto-correct and Auto-fill Functionality (October 2024)</b>
+                <p>Designed and implemented an auto-correct and auto-fill function utilizing Svelte and Java for a cooking/meal planner and recipe generation application.</p>
+                <p>Adapted Levenshtein Distance Formula to check similarity and differences between user input and database records and to serve as a foundation for developing auto-correct and auto-filling functionality, with 85% accuracy.</p>
+                <p>Redesigned frontend and UI for pantry and shopping list page deploying Svelte and Svelte Carbon Components and HTML/CSS to make it more user friendly and visually appealing.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <b>Visualization of Monte Carlo Tree Search Algorithm (June 2024)</b>
+                <p>Worked with a team of 5 developers to construct a visualization algorithm of Monte Carlo Tree Search, leveraging Python, Flash and Electron, deployed in a local hosted environment and visualized through a game of Tic-Tac-Toe.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <b>Student Enrolment System (April 2022)</b>
+                <p>Conceptualized and delivered a Java/JavaFX Student Enrollment System in Netbeans, from idea generation to implementation. Designed and integrated modular CRUD functionality using List-based data management to handle 50+ records efficiently.</p>
+                <p>Debugged and optimized record synchronization between the enrollment and course management modules by integrating threading, semaphores and exception handling, ensuring accuracy and stability during tests with up to five concurrent users.</p>
+            </li>
+        </ul>
+    </div>
+
+</div>
 
 <div id="contact-popup" class="popup">
     <div class="popup-content">
@@ -60,6 +122,159 @@
         </form>
     </div>
 </div>
+
+<section id="hobbies" class = "hero hobbies-hero">
+    <div class="row">
+        <div class="column">
+            <h3> Photography </h3>
+            <p> I have recently gotten into Photography, and have just bought my first digital camera: The Fujifilm X-T50. Here are a few photos I have taken with my IPhone and my X-T50:
+            during the last few trips I have taken.</p>
+            <div class="slideshow-container photography-slideshow">
+                <div class="slides photo-slide fade" data-caption="Sky Tower - Auckland, New Zealand">
+                    <img src="../images/DSCF0570.JPG" alt="Photo 1">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Two Dogs Playing - Grindelwald, Switzerland">
+                    <img src="../images/image%202.jpg" alt="Photo 2">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Marina Bay Sands - Singapore">
+                    <img src="../images/IMG_1229.JPG" alt="Photo 3">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Helicopter Ride over New York - New York City, USA">
+                    <img src="../images/CFTF6855.JPG" alt="Photo 4">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Macchu Pichu - Cusco, Peru">
+                    <img src="../images/IMG_1879.JPG" alt="Photo 5">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Sunset - Somewhere in Bolivia">
+                    <img src="../images/IMG_1971.JPG" alt="Photo 7">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Markets and Streets - La Paz, Bolivia">
+                    <img src="../images/IMG_1983.JPG" alt="Photo 8">
+                </div>
+                <div class="slides photo-slide fade" data-caption="On a Highway to Death Road - Yungas, Bolivia">
+                    <img src="../images/IMG_1998.JPG" alt="Photo 9">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Pitstop on the Death Road - Yungas, Bolivia">
+                    <img src="../images/IMG_2003.JPG" alt="Photo 10">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Halfway point on the Death Road - Yungas, Bolivia">
+                    <img src="../images/IMG_2021.JPG" alt="Photo 11">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Salt Flats - Uyuni, Bolivia">
+                    <img src="../images/IMG_2134.JPG" alt="Photo 12">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Flamingos - Uyuni, Bolivia">
+                    <img src="../images/IMG_2187.JPG" alt="Photo 13">
+                </div>
+                <div class="slides photo-slide fade" data-caption="San Cristobal Hill - Santiago, Chile">
+                    <img src="../images/IMG_2332.JPG" alt="Photo 14">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Sky Costanera - Santiago, Chile">
+                    <img src="../images/IMG_2335.JPG" alt="Photo 15">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Santa Lucia Hill - Santiago, Chile">
+                    <img src="../images/IMG_2403.JPG" alt="Photo 16">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Flight Home from Chile - Somewhere, Chile">
+                    <img src="../images/IMG_2441.JPG" alt="Photo 17">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Osaka Castle - Osaka, Japan">
+                    <img src="../images/IMG_5009.JPG" alt="Photo 18">
+                </div>
+                <div class="slides photo-slide fade" data-caption="View from the Peak - Hong Kong, China">
+                    <img src="../images/IMG_6954.JPG" alt="Photo 19">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Badaling Great Wall - Beijing, China">
+                    <img src="../images/IMG_8046.JPG" alt="Photo 20">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Nyhavn Harbour - Copenhagen, Denmark">
+                    <img src="../images/IMG_6974.jpg" alt="Photo 21">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Afternoon Walk - Stockholm, Sweden">
+                    <img src="../images/IMG_6999.jpg" alt="Photo 22">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Nidaros Cathedral - Trondheim, Norway">
+                    <img src="../images/IMG_8215.jpg" alt="Photo 23">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Badaling Great Wall - Beijing, China">
+                    <img src="../images/IMG_8046.JPG" alt="Photo 24">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Northern Lights - Tromso, Norway">
+                    <img src="../images/IMG_8571.jpg" alt="Photo 25">
+                </div>
+                <div class="slides photo-slide fade" data-caption="Bryggen - Bergen, Norway">
+                    <img src="../images/IMG_7971.jpg" alt="Photo 26">
+                </div>
+            </div>
+            <div class="slideshow-caption photography-caption"></div>
+        </div>
+        <div class="column">
+            <h1 class="hobbies-title"> Hobbies </h1>
+            <h3 class="Gaming-title"> Gaming </h3>
+            <p> I enjoy RPGs, tactical and strategy games, as well as adventure style games. I've recently completed Baldurs Gate 3 for the first time and I am in
+            the process of playing Dragon Age: The Veilguard, when I have free time. Otherwise I enjoy returning to RPGs and Strategy games such as Crusader Kings 3 and the
+            Total War series.</p>
+            <div class="slideshow-container gaming-slideshow">
+                <div class="slides game-slide fade" data-caption="Baldurs Gate 3">
+                    <img src="../images/BaldursGate.jpg" alt="BaldursGate">
+                </div>
+                <div class="slides game-slide fade" data-caption="Crusader Kings 3">
+                    <img src="../images/CrusaderKings.jpg" alt="CrusaderKings">
+                </div>
+                <div class="slides game-slide fade" data-caption="Cyberpunk 2077">
+                    <img src="../images/Cyberpunk2077.jpg" alt="Cyberpunk">
+                </div>
+                <div class="slides game-slide fade" data-caption="Dragon Age Origins">
+                    <img src="../images/DragonAge.jpg" alt="DragonAge">
+                </div>
+                <div class="slides game-slide fade" data-caption="Mass Effect">
+                    <img src="../images/MassEffect.jpg" alt="MassEffect">
+                </div>
+                <div class="slides game-slide fade" data-caption="Red Dead Redemption 2">
+                    <img src="../images/RDR2.jpg" alt="RDR">
+                </div>
+                <div class="slides game-slide fade" data-caption="Rome Total War 2">
+                    <img src="../images/RomeTotalWar.jpg" alt="RTW">
+                </div>
+                <div class="slides game-slide fade" data-caption="Warcraft 3: The Frozen Throne">
+                    <img src="../images/Warcraft.jpg" alt="WC">
+                </div>
+            </div>
+            <div class="slideshow-caption gaming-caption"></div>
+        </div>
+
+        <div class="column">
+            <h3> LEGO </h3>
+            <p> I've also recently gotten into building LEGO sets, and particularly enjoy the Architecture series. Here are some of the sets I've recently completed.
+            My personal favourite is the Notre Dame Cathedral and the Trevi Fountain.</p>
+            <div class="slideshow-container lego-slideshow">
+                <div class="slides lego fade" data-caption="Trevi Fountain - 21062">
+                    <img src="../images/trevilego.jpg" alt="trevi">
+                </div>
+                <div class="slides lego fade" data-caption="Singapore - 21057">
+                    <img src="../images/singaporelego.jpg" alt="singapore">
+                </div>
+                <div class="slides lego fade" data-caption="Statue of Liberty - 21042">
+                    <img src="../images/libertylego.jpg" alt="liberty">
+                </div>
+                <div class="slides lego fade" data-caption="Neuschwanstein Castle - 21063">
+                    <img src="../images/neuschwansteinlego.jpg" alt="neusch">
+                </div>
+                <div class="slides lego fade" data-caption="Notre Dame Cathedral - 21061">
+                    <img src="../images/notredamelego.jpg" alt="notre">
+                </div>
+                <div class="slides lego fade" data-caption="Himeji Castle - 21060">
+                    <img src="../images/himejilego.jpg" alt="himeji">
+                </div>
+                <div class="slides lego fade" data-caption="Great Pyramid of Giza - 21058">
+                    <img src="../images/gizalego.jpg" alt="giza">
+                </div>
+            </div>
+            <div class="slideshow-caption lego-caption"></div>
+        </div>
+    </div>
+</section>
+
 
 </body>
 </html>
