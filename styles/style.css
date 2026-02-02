@@ -64,7 +64,6 @@ ul li a:hover {
   }
 }
 
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -134,8 +133,6 @@ ul li a:hover {
   font-size: 2em;
 }
 
-
-
 .hero {
   text-align: center;
 }
@@ -156,7 +153,6 @@ ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 @media screen and (max-width: 900px) {
   .column {
     width: 100%;
@@ -164,7 +160,6 @@ ul li a:hover {
     text-align: center;
   }
 }
-
 
 .slideshow-container {
   width: 80%;
@@ -177,6 +172,10 @@ ul li a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   text-align: center;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
 }
 
 .slideshow-caption {
@@ -191,12 +190,12 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  height: auto;
 }
 
 .slides img {
   width: auto;
-  height: 60vh;
+  max-height: 100%;
   max-width: 100%;
   object-fit: contain;
   background-color: #000;
@@ -374,6 +373,8 @@ ul li a:hover {
   background-color: #B0C4DE;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 

@@ -21,6 +21,7 @@ function startSlideshow(slideSelector, captionSelector) {
   }
 
   // Show the first slide + caption
+  slides.forEach(s => s.style.display = "none");
   slides[0].style.display = "block";
   updateCaption();
   setTimeout(nextSlide, 3000);
